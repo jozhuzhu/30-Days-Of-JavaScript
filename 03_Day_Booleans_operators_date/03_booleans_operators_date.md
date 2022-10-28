@@ -73,16 +73,16 @@ We agreed that boolean values are either true or false.
 ### Truthy values
 
 - All numbers(positive and negative) are truthy except zero
-- All strings are truthy except an empty string ('')
+- <font color="#00dddd">All strings are truthy except an empty string ('')</font>
 - The boolean true
 
 ### Falsy values
 
 - 0
-- 0n
-- null
-- undefined
-- NaN
+- <font color="#00dddd">0n</font>
+- <font color="#00dddd">null</font>
+- <font color="#00dddd">undefined</font>
+- <font color="#00dddd">NaN</font>
 - the boolean false
 - '', "", ``, empty string
 
@@ -178,6 +178,11 @@ console.log(
 ### Comparison Operators
 
 In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+
+<font color="#00dddd">
+== &nbsp;&nbsp;Equal in value only: Equivalent<br>
+!!! &nbsp;&nbsp; NaN compares unequal (via ==, !=, ===, and !==) to any other value -- including to another NaN value<br>
+=== Equal in value and data type: Exactly equal</font>
 
 ![Comparison Operators](../images/comparison_operators.png)
 **Example: Comparison Operators**
@@ -336,6 +341,13 @@ number > 0
 ### Operator Precedence
 
 I would like to recommend you to read about operator precedence from this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+1. the unique exponentiation operator has right-associativity
+```jsp
+const a = 4 ** 3 ** 2; // Same as 4 ** (3 ** 2); evaluates to 262144
+```
+
+2. `yield` has lower precedence than noraml binary operators
+
 
 ## Window Methods
 
@@ -351,7 +363,7 @@ alert(message)
 alert('Welcome to 30DaysOfJavaScript')
 ```
 
-Do not use too much alert because it is destructing and annoying, use it just to test.
+<font color="#00dddd">Do not use too much alert because it is destructing and annoying, use it just to test.</font>
 
 ### Window prompt() method
 
